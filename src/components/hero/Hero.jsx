@@ -9,7 +9,7 @@ import {
   // image6,
 } from "../../assets/image";
 import { automated } from "../../assets/video";
-import { VideoPlayer } from "../clearlink/VideoPlayer";
+import { VideoPlayer } from "../advisoradvantage/VideoPlayer";
 
 function Hero() {
   return (

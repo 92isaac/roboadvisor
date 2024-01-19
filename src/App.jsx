@@ -1,6 +1,6 @@
 
 import './App.css'
-import { Clearlink } from './components/clearlink/Clearlink'
+import { Advisoradvantage } from './components/advisoradvantage/advisoradvantage'
 import { Company } from './components/companies/Company'
 import Faqs from './components/faqs/Faqs'
 import Header from './components/header/Header'
@@ -15,7 +15,7 @@ function App() {
     <Header />
     <Hero />
     <Company />
-    <Clearlink />
+    <Advisoradvantage />
     <Stock />
     <Faqs />
     

@@ -6,7 +6,7 @@ export const Countup = () => {
     <div className="flex justify-center items-center w-full">
       <div className="w-[90%] md:w-[60%] flex justify-evenly md:justify-between">
         {countData.map((item, index) => (
-            <CountUp start={0} end={item.end} delay={0} className="flex" key={index}>
+            <CountUp start={0} end={item.end} delay={0} duration={8} className="flex" key={index}>
               {({ countUpRef }) => (
                 <div className="text-center">
                   <span ref={countUpRef} className="text-2xl md:text-4xl font-bold" />{" "}
@@ -34,7 +34,7 @@ const countData = [
   },
   {
     end: 12,
-    name:"trusted client",
+    name:"active users",
     sign:"M",
   },
   {

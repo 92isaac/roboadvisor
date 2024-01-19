@@ -1,28 +1,28 @@
 import { phonevideo } from "../../assets/video";
 import { VideoPlayer } from "./VideoPlayer";
 
-export const Clearlink = () => {
+export const Advisoradvantage = () => {
   return (
     
-    <div className="wcl-container w-full md:pt-[100px] md:pb-[50px] md:px-[97px] px-5 h-max relative">
-      <div className="whyCLHeader-container pb-[50px]">
-        <div className="whyCLSubheading text-blue-700 text-sm font-bold">
-          The ClearLink Advantage
+    <div className="w-full md:pt-[100px] md:pb-[50px] md:px-[97px] px-5 h-max relative">
+      <div className="pb-[50px]">
+        <div className="text-blue-700 text-sm font-bold">
+          The RoboAdvisor Advantage
         </div>
-        <div className="whyCLHeader text-gray-800 text-[40px] my-4 mx-0 -tracking-[0.96px] ">
-          Why choose ClearLink?
+        <div className="text-gray-800 text-[40px] my-4 mx-0 -tracking-[0.96px] ">
+          Why choose RoboAdvisor?
         </div>
-        <div className="whyCLHeaderSub text-[17px] font-normal leading-8 ">
-          In a world where connection is everything, ClearLink takes the lead.
+        <div className="text-[17px] font-normal leading-8 ">
+          In a world where connection is everything, RoboAdvisor takes the lead.
           Our
-          <br /> cutting-edge video conferencing app offers:
+          <br /> cutting-edge video trading app offers:
         </div>
       </div>
-      <div className="whyCLBody h-[400px] w-full justify-between lg:flex items-center ">
-        <div className="whyCLConten-container lg:w-[58%] h-full gap-[10px] flex flex-col ">
-          <div className="whyCLContent-top flex w-full h-1/2 gap-[10px] ">
-            <div className="whyCLcontent w-[48%] h-1/2 px-0 py-[10px] ">
-              <div className="whyCLcontent-icon w-[40px] h-[40px] rounded-full border border-gray-200 bg-gray-50 flex justify-center items-center ">
+      <div className=" h-[400px] w-full justify-between lg:flex items-center ">
+        <div className="lg:w-[58%] h-full gap-[10px] flex flex-col ">
+          <div className="flex w-full h-1/2 gap-[10px] ">
+            <div className="w-[48%] h-1/2 px-0 py-[10px] ">
+              <div className="w-[40px] h-[40px] rounded-full border border-gray-200 bg-gray-50 flex justify-center items-center ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -46,16 +46,15 @@ export const Clearlink = () => {
                   />
                 </svg>
               </div>
-              <div className="whyCLcontent-title mt-[10px] text-gray-900 text-[1rem] font-[500] leading-8 ">
-                Crystal-clear HD video
+              <div className="mt-[10px] text-gray-900 text-[1rem] font-[500] leading-8 ">
+              Reliable and diversified
               </div>
-              <div className="whyCLcontent-subtitle mt-[10px] text-gray-600 text-[0.8rem] font-normal leading-5">
-                No more pixelation or blurriness – just stunning, lifelike
-                clarity that brings your team closer in meetings.
+              <div className="mt-[10px] text-gray-600 text-[0.8rem] font-normal leading-5">
+              Your money is invested in a wide range of asset classes across the market. It&apos;s a time-tested way to help maximize returns while minimizing risk.
               </div>
             </div>
-            <div className="whyCLcontent w-[48%] h-1/2 px-0 py-[10px]">
-              <div className="whyCLcontent-icon w-[40px] h-[40px] rounded-full border border-gray-200 bg-gray-50 flex justify-center items-center">
+            <div className="w-[48%] h-1/2 px-0 py-[10px]">
+              <div className="w-[40px] h-[40px] rounded-full border border-gray-200 bg-gray-50 flex justify-center items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -72,18 +71,17 @@ export const Clearlink = () => {
                   />
                 </svg>
               </div>
-              <div className="whyCLcontent-title mt-[10px] text-gray-900 text-[1rem] font-[500] leading-8">
-                Noise-canceling audio
+              <div className="mt-[10px] text-gray-900 text-[1rem] font-[500] leading-8">
+              Made for modern investors
               </div>
-              <div className="whyCLcontent-subtitle mt-[10px] text-gray-600 text-[0.8rem] font-normal leading-5">
-                Say goodbye to distractions with our advanced audio tech for
-                crisp, interruption-free conversations.
+              <div className="mt-[10px] text-gray-600 text-[0.8rem] font-normal leading-5">
+              Get access to rare, innovative investing opportunities without high fees. Enjoy intuitive tech and get human help along the way.
               </div>
             </div>
           </div>
-          <div className="whyCLContent-bottom flex w-full h-1/2 gap-[10px] ">
-            <div className="whyCLcontent w-[48%] h-1/2 px-0 py-[10px]">
-              <div className="whyCLcontent-icon w-[40px] h-[40px] rounded-full border border-gray-200 bg-gray-50 flex justify-center items-center">
+          <div className="flex w-full h-1/2 gap-[10px] ">
+            <div className=" w-[48%] h-1/2 px-0 py-[10px]">
+              <div className=" w-[40px] h-[40px] rounded-full border border-gray-200 bg-gray-50 flex justify-center items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -100,17 +98,15 @@ export const Clearlink = () => {
                   />
                 </svg>
               </div>
-              <div className="whyCLcontent-title mt-[10px] text-gray-900 text-[1rem] font-[500] leading-8">
-                Scheduling made easy
+              <div className=" mt-[10px] text-gray-900 text-[1rem] font-[500] leading-8">
+              Supported by experts
               </div>
-              <div className="whyCLcontent-subtitle mt-[10px] text-gray-600 text-[0.8rem] font-normal leading-5">
-                Streamline your agenda with ClearLink&apos;s intuitive
-                scheduling. Set up meetings, send invitations, and receive
-                reminders in one place.
+              <div className=" mt-[10px] text-gray-600 text-[0.8rem] font-normal leading-5">
+              Our in-house investment team will customize a portfolio to suit your risk tolerance and goals. They keep a close eye on market trends and opportunities, so you don’t have to.
               </div>
             </div>
-            <div className="whyCLcontent w-[48%] h-1/2 px-0 py-[10px]">
-              <div className="whyCLcontent-icon w-[40px] h-[40px] rounded-full border border-gray-200 bg-gray-50 flex justify-center items-center">
+            <div className=" w-[48%] h-1/2 px-0 py-[10px]">
+              <div className=" w-[40px] h-[40px] rounded-full border border-gray-200 bg-gray-50 flex justify-center items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -127,17 +123,17 @@ export const Clearlink = () => {
                   />
                 </svg>
               </div>
-              <div className="whyCLcontent-title mt-[10px] text-gray-900 text-[1rem] font-[500] leading-8">
-                Bank-grade security
+              <div className=" mt-[10px] text-gray-900 text-[1rem] font-[500] leading-8">
+              Smarter investing, brilliantly personalized.
+
               </div>
-              <div className="whyCLcontent-subtitle mt-[10px] text-gray-600 text-[0.8rem] font-normal leading-5">
-                Your privacy is our priority with bank-grade security protocols
-                safeguarding your meetings and data from unwanted intruders.
-              </div>
+              <p className=" mt-[10px] text-gray-600 text-[0.8rem] font-normal leading-5">
+              Just answer a few questions, and we’ll build you a personalized portfolio of low-cost index funds from up to 17 global asset classes. Our software handles all the trading, rebalancing, and other busywork to help grow your wealth for the long term.
+              </p>
             </div>
           </div>
         </div>
-        <div className="whyCLImage md:w-[40%] h-full md:mt-0 mt-5">
+        <div className=" md:w-[40%] h-full md:mt-0 mt-5">
           <VideoPlayer src={phonevideo} autoPlay={true} muted loop />
         </div>
       </div>

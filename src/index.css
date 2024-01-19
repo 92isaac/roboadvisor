@@ -6,7 +6,7 @@
 
 * {
   font-family: "Inter", sans-serif;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 /* FAQS */
@@ -29,7 +29,7 @@
 .faqs__box h3 {
   font-size: medium;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -52,7 +52,7 @@
 
 .item h3 {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .item p {
@@ -65,8 +65,6 @@
   cursor: pointer;
   width: 4rem;
   transition: all 0.1s cubic-bezier(1, 0, 1, 0);
-
-
 }
 
 /* .faqs__box p {
