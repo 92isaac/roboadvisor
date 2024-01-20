@@ -3,9 +3,11 @@ import './App.css'
 import { Advisoradvantage } from './components/advisoradvantage/advisoradvantage'
 import { Company } from './components/companies/Company'
 import Faqs from './components/faqs/Faqs'
+import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
 import Hero from './components/hero/Hero'
 import { Stock } from './components/stock/Stock'
+import SubscribeSection from './components/utilies/SubscribtionSection'
 
 function App() {
 
@@ -18,7 +20,8 @@ function App() {
     <Advisoradvantage />
     <Stock />
     <Faqs />
-    
+    <SubscribeSection />
+    <Footer />
     </>
   )
 }

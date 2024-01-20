@@ -10,5 +10,7 @@ export const image5 = `${IMAGES_PATH}/image108.png`;
 export const image6 = `${IMAGES_PATH}/image103.png`;
 export const avatar = `${IMAGES_PATH}/Avatar.png`;
 export const content = `${IMAGES_PATH}/Contents.png`;
+export const play = `${IMAGES_PATH}/play.png`;
+export const app = `${IMAGES_PATH}/app.png`;
 
 

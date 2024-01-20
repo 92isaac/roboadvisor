@@ -1,6 +1,6 @@
 // import React from 'react'
 
-import { Logo } from "../../utilies/Logo";
+import { Logo } from "../utilies/Logo";
 
 const Header = () => {
   return (

@@ -189,14 +189,14 @@ function Hero() {
         <div className="image-grid flex gap-[1px] h-[100%] w-full">
         <VideoPlayer src={automated} autoPlay={true} muted loop />
         </div>
-        <div className="absolute md:top-[54px] top-[85px] py-1 px-2 w-1/2 bg-[#fff] opacity-55 rounded-md text-xs left-0 md:left-8">
+        <div className="absolute md:top-[54px] top-[85px] py-1 px-2 w-1/2 bg-[#fff] opacity-55  rounded-md text-xs left-0 md:left-8">
           <div className="flex text-black justify-between items-center">
             <small>roboadvisor</small>
             <small>now</small>
           </div>
               <p className="text-black font-bold z-50">We saved you $78.11 on your taxes.</p>
             </div>
-        <div className="absolute bottom-[85px] md:bottom-[52px] py-1 px-2 w-1/2 bg-[#fff] opacity-55 rounded-md text-xs md:right-8 right-0">
+        <div className="absolute bottom-[85px] md:bottom-[52px] py-1 px-2 w-1/2 bg-[#fff] opacity-55  rounded-md text-xs md:right-8 right-0">
           <div className="flex text-black justify-between items-center">
             <small>roboadvisor</small>
             <small>now</small>
