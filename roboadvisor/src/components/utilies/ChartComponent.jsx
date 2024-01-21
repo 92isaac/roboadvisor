@@ -32,7 +32,7 @@ const ChartComponent = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const apiUrl = `http://localhost:5000/api/investment/${selectedRiskScore}`;
+      const apiUrl = `https://roboadvisor-ft9ja-bknd.onrender.com/api/investment/${selectedRiskScore}`;
       try {
         const response = await axios.get(apiUrl);
         setInvestmentData(response?.data);
@@ -91,8 +91,8 @@ const ChartComponent = () => {
     );
   };
 
-  console.log(investmentdata?.riskScore);
-  console.log(investmentdata);
+  // console.log(investmentdata?.riskScore);
+  // console.log(investmentdata);
   return (
     <div>
       <div className=" w-full md:py-[50px] md:px-[97px] px-5 h-max">
@@ -111,7 +111,7 @@ const ChartComponent = () => {
             max="10"
             value={selectedRiskScore}
             onChange={handleChangeRiskScore}
-            className="slider-thumb"
+            className="slider-thumb w-full "
           />
           <div className="text-center inline ml-4 mt-0">
             <span className="text-lg font-normal rounded">{selectedRiskScore}</span>
