@@ -7,6 +7,7 @@ import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
 import Hero from './components/hero/Hero'
 import { Stock } from './components/stock/Stock'
+import ChartComponent from './components/utilies/ChartComponent'
 import SubscribeSection from './components/utilies/SubscribtionSection'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     <Company />
     <Advisoradvantage />
     <Stock />
+    <ChartComponent />
     <Faqs />
     <SubscribeSection />
     <Footer />

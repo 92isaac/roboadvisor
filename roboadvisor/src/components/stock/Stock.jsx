@@ -5,9 +5,9 @@ export const Stock = () => {
   return (
     <div className="shopify-container mt-[28rem] md:mt-5 w-full h-full md:flex items-center justify-between px-5 py-16 md:px-24 bg-gray-50">
       <div className="shopify-content md:w-1/2">
-      <div className="text-blue-700 text-sm font-bold">
+      <h3 className="text-blue-700 text-sm font-bold">
           Risk score sample
-        </div>
+        </h3>
         <div className="star-row flex items-center gap-1.5 shopify-star mt-3">
         <IoStarOutline className="text-[#FDB022] "/>
         <IoStarOutline className="text-[#FDB022] "/>

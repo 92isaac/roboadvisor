@@ -17,8 +17,7 @@ function Footer() {
         <div className='main-one md:w-[33%] '>
           <Logo/>
           <p className="my-[16px] md:my-[3rem] leading-[1.7] text-[#667085] "> 
-            ClearLink is your gateway to effortless, high-quality video
-            conferencing. Join us in shaping the future of communication!
+          You can do everything you need right in our app. But sometimes, it’s just easier to talk to a person. That’s why we have a gaggle of certified CPAs, CFAs, and CFPs standing by to answer your questions.
           </p>
         </div>
         <div className="flex flex-wrap justify-between gap-10">
@@ -62,7 +61,7 @@ function Footer() {
         </div>
       </div>
       <div className="copyright md:flex justify-between py-[2rem]  px-[4rem] bg-[#f9fafb] ">
-        <p className="text-[#667085] text-[0.875rem] ">© {year} ClearLink. All rights reserved.</p>
+        <p className="text-[#667085] text-[0.875rem] ">© {year} Roboadvisor. All rights reserved.</p>
         <span className="socials flex items-center w-2/3 mx-auto gap-[1rem] ">
           <FiLinkedin className="outline-none text-gray-400"/>
           <FiTwitter className="outline-none text-gray-400"/>
