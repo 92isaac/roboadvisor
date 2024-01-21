@@ -9,9 +9,9 @@ export const Countup = () => {
             <CountUp start={0} end={item.end} delay={0} duration={8} className="flex" key={index}>
               {({ countUpRef }) => (
                 <div className="text-center">
-                  <span ref={countUpRef} className="text-2xl md:text-4xl font-bold" />{" "}
-                  <span className="md:text-2xl text-gray-500 italic">{item.sign}</span>
-                  <h2>{item.name}</h2>
+                  <span ref={countUpRef} className="text-lg md:text-4xl font-bold" />{" "}
+                  <span className="text-sm md:text-2xl text-gray-500">{item.sign}</span>
+                  <h2 className="text-xs md:text-sm">{item.name}</h2>
                 </div>
               )}
             </CountUp>

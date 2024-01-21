@@ -101,7 +101,7 @@ const ChartComponent = () => {
             htmlFor="progress"
             className="block text-blue-700 text-sm font-bold"
           >
-            Risk score sample
+            Risk score  <span className="text-l font-bold ">{selectedRiskScore}</span>
           </label>
           <input
             type="range"
@@ -114,7 +114,7 @@ const ChartComponent = () => {
             className="slider-thumb w-full "
           />
           <div className="text-center inline ml-4 mt-0">
-            <span className="text-lg font-normal rounded">{selectedRiskScore}</span>
+           
           </div>
         </div>
       </div>
@@ -122,7 +122,6 @@ const ChartComponent = () => {
       {
         investmentdata ? (      <>
           <div className={`box ${activeDiv === 1 ? "block" : "hidden"}`}>
-            <h2>Bar Chart</h2>
             <ResponsiveContainer width="100%" height={300}>
               <BarChart data={chartData} className="w-full">
                 <CartesianGrid strokeDasharray="3 3" />
@@ -262,22 +261,22 @@ const ChartComponent = () => {
       <div className="flex mt-4 mx-auto">
         <button
           // className="mr-2 px-4 py-2 bg-blue-500 text-white"
-          className={`mr-2 px-4 py-2 ${activeDiv === 1 ? " bg-blue-500 text-white" : " bg-gray-300 text-black"}`}
+          className={`text-xs md:text-sm mr-2 px-4 py-2 ${activeDiv === 1 ? " bg-blue-500 text-white" : " bg-gray-300 text-black"}`}
           onClick={() => toggleDiv(1)}
         >
-          barChart
+          BarChart
         </button>
 
         <button
-          className={`mr-2 px-4 py-2 ${activeDiv === 2 ? " bg-green-500 text-white" : " bg-gray-300 text-black"}`}
+          className={`text-xs md:text-sm mr-2 px-4 py-2 ${activeDiv === 2 ? " bg-green-500 text-white" : " bg-gray-300 text-black"}`}
 
           onClick={() => toggleDiv(2)}
         >
-          shape barChart
+          Shape barChart
         </button>
 
         <button
-          className={`px-4 py-2 ${activeDiv === 3 ? " bg-red-500 text-white" : " bg-gray-300 text-black"}`}
+          className={`text-xs md:text-sm px-4 py-2 ${activeDiv === 3 ? " bg-red-500 text-white" : " bg-gray-300 text-black"}`}
           onClick={() => toggleDiv(3)}
         >
           Line chart
