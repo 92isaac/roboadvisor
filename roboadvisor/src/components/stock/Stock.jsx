@@ -3,7 +3,7 @@ import { IoStarOutline } from "react-icons/io5";
 
 export const Stock = () => {
   return (
-    <div className="shopify-container mt-[28rem] md:mt-5 w-full h-full md:flex items-center justify-between px-5 py-16 md:px-24 bg-gray-50">
+    <div className="shopify-container mt-[30rem] md:mt-5 w-full h-full md:flex items-center justify-between px-5 py-16 md:px-24 bg-gray-50">
       <div className="shopify-content md:w-1/2">
       <h3 className="text-blue-700 text-sm font-bold">
           Risk score sample
@@ -16,18 +16,18 @@ export const Stock = () => {
         <IoStarOutline className="text-[#FDB022] "/>
         </div>
 
-        <div className="shopify-header text-gray-900 md:text-3xl font-[500] md:w-[80%] tracking-[-0.2px] mt-[40px]">
+        <div className="shopify-header text-gray-900 md:text-3xl font-[600] md:w-[80%] tracking-[-0.2px] mt-[25px] md:mt-[40px] md:font-bold">
         Smarter investing, brilliantly personalized.
         </div>
-        <p> Just answer a few questions, and we’ll build you a personalized portfolio of low-cost index funds from up to 17 global asset classes. Our software handles all the trading, rebalancing, and other busywork to help grow your wealth for the long term.</p>
+        <p className="text-sm pt-2"> Just answer a few questions, and we’ll build you a personalized portfolio of low-cost index funds from up to 17 global asset classes. Our software handles all the trading, rebalancing, and other busywork to help grow your wealth for the long term.</p>
         <div className="shopify-review items-center justify-between pr-7 mt-16 flex">
           <div className="shopify-person-review items-center gap-2.5 flex">
             <img src={avatar} alt="" />
             <div className="shopify-text flex-col justify-evenly flex">
-              <div className="shopify-text-name text-gray-900 text-lg font-bold">
+              <div className="shopify-text-name text-gray-900 text-sm md:text-lg font-bold">
                 Sarah Thompson
               </div>
-              <div className="shopify-text-title text-gray-600 text-sm font-normal ">
+              <div className="shopify-text-title text-gray-600 text-xs md:text-sm font-normal ">
                 Project Manager, Shopify
               </div>
             </div>

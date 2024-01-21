@@ -13,7 +13,7 @@ function Footer() {
   const year = new Date().getFullYear()
   return (
     <div className="app__footer">
-      <div className="footer__main md:pt-[4rem] md:px-[97px] md:pb-[2rem] px-5 md:flex justify-between items-start bg-white ">
+      <div className="md:pt-[4rem] md:px-[97px] md:pb-[2rem] px-5 md:flex justify-between items-start bg-white ">
         <div className='main-one md:w-[33%] '>
           <Logo/>
           <p className="my-[16px] md:my-[3rem] leading-[1.7] text-[#667085] "> 
@@ -53,15 +53,20 @@ function Footer() {
             <li className="pointer font-semibold pt-[1.4rem] ">Licencies</li>
             <li className="pointer font-semibold pt-[1.4rem] ">Contact</li>
         </ul>
+        <div className="md:hidden flex flex-col gap-[1rem] pointer mt-7 md:mt-0">
+            <p className="text-blue-600 font-semibold">Get the app</p>
+            <img src={app} alt='app store' className="w-2/3 md:w-full"/>
+            <img src={play} alt='app store' className="w-2/3 md:w-full"/>
         </div>
-        <div className="app__logo flex flex-col gap-[1rem] pointer mt-7 md:mt-0">
+        </div>
+        <div className="hidden md:flex flex-col gap-[1rem] pointer mt-7 md:mt-0">
             <p className="text-blue-600 font-semibold">Get the app</p>
             <img src={app} alt='app store' className="w-1/3 md:w-full"/>
             <img src={play} alt='app store' className="w-1/3 md:w-full"/>
         </div>
       </div>
-      <div className="copyright md:flex justify-between py-[2rem]  px-[4rem] bg-[#f9fafb] ">
-        <p className="text-[#667085] text-[0.875rem] ">© {year} Roboadvisor. All rights reserved.</p>
+      <div className="md:flex justify-between py-[2rem]  px-[4rem] bg-[#f9fafb] ">
+        <p className="text-[#667085] mx-auto text-xs md:text-[0.875rem] ">© {year} Roboadvisor. All rights reserved.</p>
         <span className="socials flex items-center w-2/3 mx-auto gap-[1rem] ">
           <FiLinkedin className="outline-none text-gray-400"/>
           <FiTwitter className="outline-none text-gray-400"/>

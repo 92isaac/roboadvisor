@@ -74,7 +74,7 @@ export const Advisoradvantage = () => {
             </div>
           </div>
         </div>
-        <div className=" md:w-[40%] h-full md:mt-0 mt-[120px]">
+        <div className=" md:w-[40%] h-full md:mt-0 mt-[130px]">
           <VideoPlayer src={phonevideo} autoPlay={true} muted loop />
         </div>
       </div>
