@@ -1,6 +1,6 @@
 
 import './App.css'
-import { Advisoradvantage } from './components/advisoradvantage/advisoradvantage'
+import { Advisoradvantage } from './components/advisoradvantage/Advisoradvantage'
 import { Company } from './components/companies/Company'
 import Faqs from './components/faqs/Faqs'
 import Footer from './components/footer/Footer'
