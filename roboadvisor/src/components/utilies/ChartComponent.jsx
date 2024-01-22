@@ -47,16 +47,16 @@ const ChartComponent = () => {
   }, [error, selectedRiskScore]);
 
   const chartData = [
-    { name: "Nigerian Stocks", value: investmentdata.nigerianStocks },
-    { name: "Foreign Stocks", value: investmentdata.foreignStocks },
-    { name: "Tech Stocks", value: investmentdata.techStocks },
-    { name: "Emerging Stocks", value: investmentdata.emergingStocks },
-    { name: "Nigerian Bonds", value: investmentdata.nigerianBonds },
-    { name: "Foriegn Bonds", value: investmentdata.foreignBonds },
-    { name: "Commodities", value: investmentdata.commodities },
-    { name: "Real Estate", value: investmentdata.realEstate },
-    { name: "T-Bills", value: investmentdata.tBills },
-    { name: "Alternative", value: investmentdata.alternative },
+    { name: "Nigerian Stocks", risk: investmentdata.nigerianStocks },
+    { name: "Foreign Stocks", risk: investmentdata.foreignStocks },
+    { name: "Tech Stocks", risk: investmentdata.techStocks },
+    { name: "Emerging Stocks", risk: investmentdata.emergingStocks },
+    { name: "Nigerian Bonds", risk: investmentdata.nigerianBonds },
+    { name: "Foriegn Bonds", risk: investmentdata.foreignBonds },
+    { name: "Commodities", risk: investmentdata.commodities },
+    { name: "Real Estate", risk: investmentdata.realEstate },
+    { name: "T-Bills", risk: investmentdata.tBills },
+    { name: "Alternative", risk: investmentdata.alternative },
   ];
 
   const colors = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "red", "pink"];
@@ -127,10 +127,10 @@ const ChartComponent = () => {
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" />
                 <YAxis />
-                <Tooltip formatter={(value, name) => [`${value}%`, `${name}`]} />
+                <Tooltip formatter={(risk, name) => [`${risk}%`, `${name}`]} />
                 <Legend />
                 <Bar
-                  dataKey="value"
+                  dataKey="risk"
                   fill="#8884d8"
                   shape={<CustomBar />}
                   label={{ position: "top" }}
@@ -138,7 +138,7 @@ const ChartComponent = () => {
                   {chartData.map((entry, index) => (
                     <Label
                       key={`label-${index}`}
-                      content={({ x, y, width, height, value }) => (
+                      content={({ x, y, width, height, risk }) => (
                         <text
                           x={x + width / 2}
                           y={y + height / 2}
@@ -146,7 +146,7 @@ const ChartComponent = () => {
                           dy={-10}
                           textAnchor="middle"
                         >
-                          {`${value}%`}
+                          {`${risk}%`}
                         </text>
                       )}
                     />
@@ -158,11 +158,11 @@ const ChartComponent = () => {
             <div className="flex justify-center gap-5 flex-wrap w-full">
               {chartData.map(
                 (item, index) =>
-                  item.value === 0 && (
+                  item.risk === 0 && (
                     <div key={index} className="flex gap-5">
                       <div className="flex justify-center gap-5 flex-wrap w-full border px-2 md:px-5 md:py-1">
                         <small className="font-semibold" >{item.name}: </small>
-                        <small>{item.value}%</small>
+                        <small>{item.risk}%</small>
                       </div>
                     </div>
                   )
@@ -186,7 +186,7 @@ const ChartComponent = () => {
                 <XAxis dataKey="name" />
                 <YAxis />
                 <Bar
-                  dataKey="value"
+                  dataKey="risk"
                   fill="#8884d8"
                   shape={<TriangleBar />}
                   label={{ position: "top" }}
@@ -203,11 +203,11 @@ const ChartComponent = () => {
             <div className="flex justify-center gap-5 flex-wrap w-full">
               {chartData.map(
                 (item, index) =>
-                  item.value === 0 && (
+                  item.risk === 0 && (
                     <div key={index} className="flex gap-5">
                       <div className="flex justify-center gap-5 flex-wrap w-full border px-2 md:px-5 md:py-1">
                         <small className="font-semibold" >{item.name}: </small>
-                        <small>{item.value}%</small>
+                        <small>{item.risk}%</small>
                       </div>
                     </div>
                   )
@@ -232,7 +232,7 @@ const ChartComponent = () => {
                 <Legend />
                 <Line
                   type="monotone"
-                  dataKey="value"
+                  dataKey="risk"
                   stroke="#8884d8"
                   activeDot={{ r: 8 }}
                 />
@@ -241,11 +241,11 @@ const ChartComponent = () => {
             <div className="flex justify-center gap-5 flex-wrap w-full">
               {chartData.map(
                 (item, index) =>
-                  item.value === 0 && (
+                  item.risk === 0 && (
                     <div key={index} className="flex gap-5">
                       <div className="flex justify-center gap-5 flex-wrap w-full border px-2 md:px-5 md:py-1">
                         <small className="font-semibold" >{item.name}: </small>
-                        <small>{item.value}%</small>
+                        <small>{item.risk}%</small>
                       </div>
                     </div>
                   )
