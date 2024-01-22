@@ -15,11 +15,14 @@ import {
   LineChart,
   Line,
 } from "recharts";
+import Loading from "./Loading";
+import ErrorComponent from "./ErrorComponet";
 
 const ChartComponent = () => {
   const [selectedRiskScore, setSelectedRiskScore] = useState(0);
   const [investmentdata, setInvestmentData] = useState([]);
   const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [activeDiv, setActiveDiv] = useState(1);
 
   const handleChangeRiskScore = (e) => {
@@ -36,10 +39,12 @@ const ChartComponent = () => {
       try {
         const response = await axios.get(apiUrl);
         setInvestmentData(response?.data);
+        setLoading(false);
         setError(false)
       } catch (err) {
         setError(true);
         console.log(error);
+        setLoading(false);
       }
     };
 
@@ -120,7 +125,7 @@ const ChartComponent = () => {
       </div>
 
       {
-        investmentdata ? (      <>
+        !loading ? (      <>
           <div className={`box ${activeDiv === 1 ? "block" : "hidden"}`}>
             <ResponsiveContainer width="100%" height={300}>
               <BarChart data={chartData} className="w-full">
@@ -252,10 +257,10 @@ const ChartComponent = () => {
               )}
             </div>
           </div>
-          </>) : <p>Loading...</p>
+          </>) : <Loading/>
       }
 
-      {error && <p style={{ color: 'red' }}>Something when wrong</p>}
+      {error && <ErrorComponent />}
 
       <div className="flex mx-auto">
       <div className="flex mt-4 mx-auto">
