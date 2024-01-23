@@ -260,7 +260,7 @@ const ChartComponent = () => {
           </>) : <Loading/>
       }
 
-      {error && <ErrorComponent />}
+      {error && <ErrorComponent message={'Someting went wrong'}/>}
 
       <div className="flex mx-auto">
       <div className="flex mt-4 mx-auto">
